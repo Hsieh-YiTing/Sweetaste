@@ -1,0 +1,114 @@
+.footer{
+    background: #EAF0ED;
+    @include pad{
+        width: 100%;
+    }
+    .mail-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding: 3% 0;
+        background: #3F5D45;
+        .icon-text{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            @include pad{
+                justify-content: center;
+                width: 100%;
+                margin-bottom: 3%;
+            }
+            .icon{
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .text{
+                p{
+                    font-size: 24px;
+                    color: #EAF0ED;
+                }
+            }
+        }    
+        .inputmail{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 50%;
+            background: #EAF0ED;
+            @include pad{
+                width: 80%;
+            }
+            .mail-icon{
+                padding-left: 20px;
+            }
+            .input-btn{
+                background: #FFE180;
+                border: none;
+                padding: 16px;
+            }
+        }
+    }
+    @include pad{
+        width: 100%;
+    }
+    .footer-box{
+        padding-left: 5.5%;
+        position: relative;
+        .logo-data{
+            padding-top: 3%;
+            .logo{
+                margin-bottom: 10%;
+                @include pad{
+                    padding: 3% 0;
+                }
+                img{
+                    @include content-img(171px, 27px)
+                }
+            }
+            .data{
+                margin-bottom: 5%;
+                p{
+                    color: #3F5D45;
+                    line-height: 20px;
+                }
+            }
+        }
+        .icon-copyright{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 3% 0;
+            @include pad{
+                display: block;
+            }
+            .icon{
+                img{
+                    @include content-img(32px, 32px)
+                }
+            }
+            .copyright{
+                padding-right: 3%;
+                p{
+                    color: #3F5D45;
+                }
+                @include pad{
+                    padding: 3% 0;
+                }
+            }
+        }
+        .goodday-logo{
+            position: absolute;
+            top: 0;
+            right: 5%;
+            @include pad{
+                display: none;
+            }
+            img{
+                @include content-img(59px, 250px)
+            }
+        }
+    }
+}

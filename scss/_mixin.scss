@@ -1,0 +1,51 @@
+@mixin size-color($width, $height, $color){
+    width: $width;
+    height: $height;
+    background: $color;
+}
+@mixin hover-settings($weight, $color){
+    font-weight: $weight;
+    color: $color;
+}
+@mixin fontSize-position-color($size, $pd-t, $pd-b, $color){
+    font-size: $size;
+    padding-top: $pd-t;
+    padding-bottom: $pd-b;
+    color: $color;
+}
+@mixin content-box($width, $height, $bg){
+    width: $width;
+    background: $bg;
+}
+@mixin content-img($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin content-phrase($size, $line-height, $gap, $color){
+    font-size: $size;
+    line-height: $line-height;
+    gap: $gap;
+    color: $color;
+}
+@mixin title-img($width, $height){
+    width: $width;
+    height: $height;
+}
+@mixin price-weight-border($weight, $border){
+    font-weight: $weight;
+    border: $border;
+}
+@mixin addcart($width, $height, $size, $weight, $border, $color, $bg){
+        width: $width;
+        height: $height;
+        font-size: $size;
+        font-weight: $weight;
+        border: $border;
+        color: $color;
+        background: $bg;
+}
+@mixin pad{
+    @media(max-width: 768px){
+        @content
+    }
+}

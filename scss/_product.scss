@@ -1,0 +1,137 @@
+.banner-img{
+    margin: 3% 0;
+    img{
+        width: 100%;
+    }
+}
+.product-list{
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    @include pad{
+        flex-direction: column;
+    }
+    .product-bar{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        @include pad{
+            width: 100%;
+            margin-bottom: 3%;
+        }
+        ol{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            li{
+                width: 100%;
+                border: 1px solid #EAF0ED;
+                h2{
+                    @include size-color(100%, 100%, #3F5D45);
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding: 5% 20%;
+                    color: white;
+                    text-align: center;
+                }
+                .list{
+                    @include size-color(100%, 100%, white);
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding: 5% 15%;
+                    color: #3F5D45;
+                    text-align: center;
+                }
+                .list:hover{
+                    background: #EAF0ED;
+                }
+            }
+
+        }
+    }
+    .banner-menu{
+        .menu-box{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 3%;
+            @include pad{
+                justify-content: center;
+            }
+            .menu-list{
+                margin-bottom: 5%;
+                .product{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center ;
+                    .product-name{
+                        @include fontSize-position-color(20px, 5%, 5%, #3F5D45);
+                        font-weight: 400;
+                        padding-left: 10%;
+                        padding-right: 10%;
+                        border-left: 1px solid #EAF0ED;
+                        border-right: 1px solid #EAF0ED;
+                    }
+                    .product-price{
+                        @include fontSize-position-color(20px, 5%, 5%, #3F5D45);
+                        font-weight: 700;
+                        padding-left: 10%;
+                        padding-right: 10%;
+                        border-right: 1px solid #EAF0ED;
+                    }
+                }
+                .menu-img{
+                    position: relative;
+                    img{
+                        width: 300px;
+                        height: 315px;            
+                    }
+                }
+                .menu-img::before{
+                    content: "本日精選";
+                    display: inline-block;
+                    writing-mode: vertical-lr;
+                    padding: 2.5%;
+                    position: absolute;
+                    color: white;
+                    letter-spacing: 5px;
+                    margin-left: 7%;
+                    @include content-box(36px, 106px, #3F5D45);
+                }
+                .menu-img::after{
+                    content: "";
+                    background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/student-week1/favorite_border.png?raw=true);
+                    @include content-img(20px, 18px);
+                    position: absolute;
+                    top: 3%;
+                    right: 3%;
+                }
+                .addcart{
+                    @include addcart(305px, 65px, 24px, bold, none, #3F5D45, #EAF0ED);
+                }
+            }
+        }
+    }
+    .page-btn{
+        margin-bottom: 5%;
+        ol{
+            display: flex;
+            justify-content: flex-end;
+            @include pad{
+                justify-content: center;
+            }
+            .btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include content-img(60px, 60px);
+                border: 1px solid #EAF0ED;
+            }
+            .btn-num:hover{
+                background: #3F5D45;
+                color: white;
+            }
+        }
+    }
+}

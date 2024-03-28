@@ -1,0 +1,190 @@
+.product-container{
+    margin-top: 5.5%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    @include pad{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .cart-product{
+        width: 70%;
+        @include pad{
+            width: 100%;
+        }
+        .your-cart{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3%;
+            background: #EAF0ED;
+            h2{
+                padding: 3% 0;
+                font-size: 24px;
+                font-weight: 700;
+                color: #3F5D45;
+            }
+        }
+        .product-box{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 15%;
+            .product-list{
+                align-items: center;
+                border-bottom: 1px solid #EAF0ED;
+                padding-bottom: 3%;
+                @include pad{
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: row;
+                }
+                .product-img{
+                    @include pad{
+                        display: flex;
+                        justify-content: center;
+                        width: 50%;
+                    }
+                    img{
+                        @include content-img(110px, 110px);
+                    }
+                }
+                .name-price-operator{
+                    display: flex;
+                    gap: 50px;
+                    @include pad{
+                        width: 40%;
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+                    .name-price{
+                        font-size: 20px;
+                        color: #3F5D45;
+                    }    
+                    .operator{
+                        ol{
+                            display: flex;
+                            li{
+                                border: 1px solid #EAF0ED;
+                                padding: 10px 22px;
+                                color: #3F5D45;
+                                @include pad{
+                                    padding: 5% 10%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .price-sum{
+                    color: #3F5D45;
+                    font-weight: 700;
+                    font-size: 20px;
+                    @include pad{
+                        display: flex;
+                        justify-content: flex-end;
+                        width: 100%;
+                        margin-top: 3%;
+                        padding-right: 8%;
+                        padding-top: 3%;
+                        border-top: 1px solid #EAF0ED;
+                    }
+                }
+                .delete-product{
+                    @include pad{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .order-box{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        @include pad{
+            width: 100%;
+        }
+        .order-summary{
+            padding: 5% 0;
+            background: #3F5D45;
+            @include pad{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: white;
+            }
+            .summary{
+                @include pad{
+                    width: 90%;
+                    padding: 3% 0;
+                    background: #EAF0ED;
+                }
+                p{
+                    text-align: center;
+                    font-size: 24px;
+                    font-weight: 400;
+                    color: #EAF0ED;
+                    @include pad{
+                        color: #3F5D45;
+                    }
+                }
+            }
+            hr{
+                width: 80%;
+                @include pad{
+                    display: none;
+                }
+            }
+            .sum{
+                @include pad{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .subtotal, .freight, .total{
+                    display: flex;
+                    justify-content: space-between;
+                }
+                .subtotal, .freight{
+                    padding: 3% 10%;
+                    @include pad{
+                        padding: 2% 6%;
+                    }
+                    p{
+                        color: #EAF0ED;
+                        @include pad{
+                            color: #3F5D45;
+                        }
+                    }
+                }
+                .total{
+                    margin-top: 5%;
+                    padding: 3% 10%;
+                    @include pad{
+                        margin: 3%;
+                        padding: 2% 3%;
+                    }
+                    p{
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #EAF0ED;
+                        @include pad{
+                            color: #3F5D45;
+                        }
+                    }
+                }
+            }
+        }
+        button{
+            border: none;
+            background: #FFE180;
+            font-size: 24px;
+            font-weight: 700;
+            padding: 3% 0;
+            a{
+                display: block;
+                text-decoration: none;
+                color: #3F5D45;
+            }
+        }
+    }
+}

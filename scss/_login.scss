@@ -1,0 +1,164 @@
+.login-community{
+    margin: 10% 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    margin-bottom: 24.5%;
+    @include pad{
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+}
+.login-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @include size-color(390px, 380px, #3F5D45);
+    @include pad{
+        background: #3F5D45;
+        width: 100%;
+        height: auto;
+    }
+    h2{
+        @include fontSize-position-color(36px, 10%, 0, #EAF0ED);
+        font-weight: 700;
+        margin-bottom: 5%;
+        @include pad{
+            padding-top: 5%;
+            padding-bottom: 0;
+        }
+    }
+    .community-pic-768px{
+        display: none;
+        @include pad{
+            display: block;
+            width: 100%;
+            margin-bottom: 5%;
+            ol{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #EAF0ED;
+                padding: 3% 0;
+                width: 100%;
+                li{
+                    border: 1px solid #EAF0ED;
+                    background: white;
+                    padding: 5% 5%;
+                }
+                img{
+                    @include content-img(83px, 16px);
+                }
+            }
+        }
+    }
+    .account-password{
+        height: 100%;
+        @include pad{
+            padding-right: 3%;
+            padding-left: 3%;
+        }
+        ol{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            height: 100%;
+            @include pad{
+                width: 100%;
+                background: #3F5D45;
+                flex-direction: row;
+                gap: 30px;
+            }
+            .symbols-input{
+                @include size-color(330px, 56px, #EAF0ED);
+                @include pad{
+                    width: 100%;
+                }
+                .material-symbols-outlined{
+                    color: #3F5D45;
+                }
+                div{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    @include content-img(100%, 100%);
+                    input{
+                        @include size-color(80%, 80%, #EAF0ED);
+                        border: none;
+                    }
+                    input::placeholder{
+                        font-size: 16px;
+                        color: #8DA291;
+                    }
+                }
+            }
+            .checkbox{
+                width: 100%;
+                color: #EAF0ED;
+                @include pad{
+                    padding-bottom: 5%;
+                }
+            }
+        }
+    }
+    .login-btn{
+        width: 100%;
+        padding: 3% 0;
+        text-align: center;
+        background: #FFE180;
+        @include pad{
+            display: block;
+        }
+        button{
+            width: 100%;
+            border: none;
+            background: #FFE180;
+            font-size: 24px;
+            font-weight: 700;
+            color: #3F5D45;
+            a{
+                display: block;
+                width: 100%;
+                color: #3F5D45;
+                text-decoration: none;
+            }
+        }
+    }
+}
+.community{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background: #EAF0ED;
+    @include pad{
+        display: none;
+    }
+    @include content-img(40%, 350px);
+    h2{
+        font-size: 24px;
+        color: #8DA291;
+    }
+    ol{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        gap: 10px;
+        li{
+            border: 1px solid #EAF0ED;
+            background: white;
+            padding: 5% 5%;
+            width: 70%;
+            img{
+                @include content-img(94px, 31px);
+            }
+        }
+    }
+}

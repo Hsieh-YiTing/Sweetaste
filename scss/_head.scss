@@ -1,0 +1,46 @@
+.header{
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    @include pad{
+        display: flex;
+        justify-content: space-around;
+    }
+    .logo-menu{
+        display: none;
+        @include pad{
+            display: block;
+        }
+        }
+    .logo-pic{
+        width: 171px;
+        height: 26px;
+        .pic{
+            @include pad{
+                width: 114px;
+                height: 18px;
+            }
+        }
+    }
+    .nav-menu{
+        display: flex;
+        align-items: center;
+        ul{
+            display: flex;
+            @include pad{
+                display: none;
+            }
+            a{
+                font-size: 16px;
+                font-weight: bold;
+                margin-right: 60px;
+                color: #3F5D45;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.address{
+    width: 100%;
+    p{
+        font-size: 20px;
+        font-weight: 700;
+        color: #EAF0ED;
+        margin-bottom: 3%;
+    }
+    .area{
+        .urban{
+            display: flex;
+            justify-content: space-between;
+            p{
+                width: 49%;
+                input{
+                    border: none;
+                    width: 100%;
+                    padding: 9% 3%;
+                }
+                input::placeholder{
+                    color: #8DA291;
+                }    
+            }
+        }
+        .road{                         
+            p{
+                width: 100%;
+                input{
+                    width: 100%;
+                    padding: 4% 0.5%;
+                }
+                input::placeholder{
+                    color: #8DA291;
+                }
+            }
+        }
+    }
+}
+.entity-invoice-box{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    ol{
+        display: flex;
+        width: 100%;
+        li{
+            border: 1px solid white;
+            text-align: center;
+            width: 50%;
+            a{
+                width: 100%;
+                padding: 10%;
+                display: block;
+                color: #EAF0ED;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+        .entityinvoice{
+            background: #EAF0ED;
+            a{
+                color: #3F5D45;
+            }
+        }
+    }
+
+}
